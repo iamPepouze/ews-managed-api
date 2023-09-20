@@ -1,7 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <ProductVersion>9.0.30729</ProductVersion>
-    <ProjectGuid>{F059972F-0561-4203-ABB8-3ABB41CCBE22}</ProjectGuid>
     <AssemblyName>Microsoft.Exchange.WebServices</AssemblyName>
     <FileUpgradeFlags />
     <UpgradeBackupLocation />
