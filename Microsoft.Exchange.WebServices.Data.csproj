@@ -4,7 +4,7 @@
     <AssemblyName>Microsoft.Exchange.WebServices</AssemblyName>
     <FileUpgradeFlags />
     <UpgradeBackupLocation />
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFrameworks>net6.0;net7.0</TargetFrameworks>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -27,8 +27,6 @@
     <Copyright>© Microsoft Corporation.  All rights reserved.</Copyright>
     <AssemblyVersion>2.2.1</AssemblyVersion>
     <FileVersion>2.2.1.0</FileVersion>
-    <OutputPath>bin\$(Configuration)\</OutputPath>
-    <BuildDependsOn>$(BuildDependsOn);AfterBuildMigrated</BuildDependsOn>
   </PropertyGroup>
   <ItemGroup>
     <SupportedPlatform Include="windows" />
