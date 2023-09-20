@@ -4,7 +4,7 @@
     <AssemblyName>Microsoft.Exchange.WebServices</AssemblyName>
     <FileUpgradeFlags />
     <UpgradeBackupLocation />
-    <TargetFramework>net35</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -30,6 +30,9 @@
     <OutputPath>bin\$(Configuration)\</OutputPath>
     <BuildDependsOn>$(BuildDependsOn);AfterBuildMigrated</BuildDependsOn>
   </PropertyGroup>
+  <ItemGroup>
+    <SupportedPlatform Include="windows" />
+  </ItemGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugType>full</DebugType>
     <DocumentationFile>bin\$(Configuration)\Microsoft.Exchange.WebServices.xml</DocumentationFile>
@@ -38,19 +41,11 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
   </PropertyGroup>
-  <Target Name="AfterBuildMigrated" Condition="'$(Configuration)' == 'Release'">
-    <!-- Download nuget.exe if we need it -->
-    <DownloadFile Condition="!Exists('$(OutputPath)\nuget.exe')" FileName="$(OutputPath)\nuget.exe" Url="https://dist.nuget.org/win-x86-commandline/latest/nuget.exe" />
-    <!-- Pack up a nuget package -->
-    <Exec Command="$(OutputPath)\nuget pack $(ProjectFileName) -Properties Configuration=Release -Symbols -OutputDirectory $(OutputPath) -IncludeReferencedProjects" />
-  </Target>
-  <ItemGroup>
-    <Reference Include="System.DirectoryServices" />
-    <Reference Include="System.Security" />
-    <Reference Include="System.Web" />
-    <Reference Include="System.Web.Services" />
-  </ItemGroup>
   <ItemGroup>
     <Compile Remove="fxcopexclusions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="System.DirectoryServices" Version="7.0.1" />
+    <PackageReference Include="System.Security.Cryptography.Xml" Version="7.0.1" />
   </ItemGroup>
 </Project>
