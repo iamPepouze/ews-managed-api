@@ -2,31 +2,15 @@
   <PropertyGroup>
     <ProductVersion>9.0.30729</ProductVersion>
     <AssemblyName>Microsoft.Exchange.WebServices</AssemblyName>
-    <FileUpgradeFlags />
     <UpgradeBackupLocation />
     <TargetFrameworks>net6.0;net7.0</TargetFrameworks>
-    <PublishUrl>publish\</PublishUrl>
-    <Install>true</Install>
-    <InstallFrom>Disk</InstallFrom>
-    <UpdateEnabled>false</UpdateEnabled>
-    <UpdateMode>Foreground</UpdateMode>
-    <UpdateInterval>7</UpdateInterval>
-    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
-    <UpdatePeriodically>false</UpdatePeriodically>
-    <UpdateRequired>false</UpdateRequired>
-    <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>0</ApplicationRevision>
-    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
-    <UseApplicationTrust>false</UseApplicationTrust>
-    <BootstrapperEnabled>true</BootstrapperEnabled>
     <AssemblyTitle>Microsoft Exchange Managed API</AssemblyTitle>
     <Company>Microsoft Corporation</Company>
     <Product>Microsoft Exchange Managed API</Product>
-    <Description>Microsoft Exchange Web Services (EWS Managed API</Description>
+    <Description>Microsoft Exchange Web Services (EWS Managed API)</Description>
     <Copyright>© Microsoft Corporation.  All rights reserved.</Copyright>
-    <AssemblyVersion>2.2.1</AssemblyVersion>
-    <FileVersion>2.2.1.0</FileVersion>
+    <AssemblyVersion>7.0.0</AssemblyVersion>
+    <FileVersion>7.0.0.0</FileVersion>
   </PropertyGroup>
   <ItemGroup>
     <SupportedPlatform Include="windows" />
